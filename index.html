@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Game</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <h1>Welcome to the Charity Water Game Prototype</h1>
-    <script src="script.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Charity Water Game Prototype</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+      <img id="background" src="img/sky1.png" alt="background" />
+      <img id="collect_container" src="img/water-can-transparent.png" alt="collect bucket" />
+      <img id="tile" src="img/desert_tileset.png" alt="tile" />
+      <img id="player" src="img/player.png" alt="player" />
+      
+        <!-- Simple HUD showing collected items -->
+        <div id="hud">
+            <div id="score">Cans: <span id="can-count">0</span></div>
+            <div id="instructions">Use ← → to move, Space to jump</div>
+        </div>
+
+        <!-- Game container: this is the visible viewport -->
+        <div id="gameScreen">
+          <canvas id="main_screen" width="816" height="480"></canvas>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
 </html>
